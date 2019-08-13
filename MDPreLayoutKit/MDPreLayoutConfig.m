@@ -20,16 +20,16 @@
 
 - (void)config {
 
-    self.preItemColor    = [UIColor redColor];
+    self.preItemColor    = [UIColor lightGrayColor];
     self.backgroundColor = [UIColor whiteColor];
     self.cornerRadius    = 5;
     self.isAnimation     = YES;
-    self.animation       = [CABasicAnimation animationWithKeyPath:@"opacity"];
     [self configAnimation];
 }
-
+// 默认呼吸动画
 - (void)configAnimation {
 
+    _animation                     = [CABasicAnimation animationWithKeyPath:@"opacity"];
     _animation.fromValue           = [NSNumber numberWithFloat:1.1f];
     _animation.toValue             = [NSNumber numberWithFloat:0.6f];
     _animation.autoreverses        = YES;

@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MDPreLayoutProtocol.h"
 
-@interface TestView : UIView <MDPreLayoutProtocol>
+@interface CommonView : UIView
 
 @property (nonatomic, strong) UIImageView   *leftView;
 

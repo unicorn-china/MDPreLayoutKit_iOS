@@ -15,8 +15,15 @@
 		B7034D01230139A300F2E872 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7034D00230139A300F2E872 /* main.m */; };
 		B7034D09230139B600F2E872 /* MDPreLayoutKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B7034D08230139B600F2E872 /* MDPreLayoutKit.podspec */; };
 		B7034D0C23013A6300F2E872 /* UIView+PreLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B7034D0B23013A6300F2E872 /* UIView+PreLayout.m */; };
-		B7034D1723014D7300F2E872 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7034D1623014D7300F2E872 /* TestView.m */; };
+		B7034D1723014D7300F2E872 /* CommonView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7034D1623014D7300F2E872 /* CommonView.m */; };
 		B7034D1C230180E500F2E872 /* MDPreLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B7034D1B230180E500F2E872 /* MDPreLayoutConfig.m */; };
+		B7034D20230250A700F2E872 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7034D1F230250A700F2E872 /* CommonViewController.m */; };
+		B7034D252302516A00F2E872 /* TableStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7034D242302516A00F2E872 /* TableStyleViewController.m */; };
+		B7034D282302518600F2E872 /* ComplexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7034D272302518600F2E872 /* ComplexViewController.m */; };
+		B7034D2B230259B600F2E872 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7034D2A230259B600F2E872 /* CustomTableViewCell.m */; };
+		B7034D2F23025FF500F2E872 /* TableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7034D2E23025FF500F2E872 /* TableModel.m */; };
+		B78AFFE9230284A5009CD013 /* ComplexView.m in Sources */ = {isa = PBXBuildFile; fileRef = B78AFFE8230284A5009CD013 /* ComplexView.m */; };
+		B78AFFEC230284F4009CD013 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B78AFFEB230284F4009CD013 /* ConfigViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +42,24 @@
 		B7034D0B23013A6300F2E872 /* UIView+PreLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+PreLayout.m"; sourceTree = "<group>"; };
 		B7034D0D23013CC900F2E872 /* MDPreLayoutKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPreLayoutKit.h; sourceTree = "<group>"; };
 		B7034D112301403100F2E872 /* MDPreLayoutProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPreLayoutProtocol.h; sourceTree = "<group>"; };
-		B7034D1523014D7300F2E872 /* TestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
-		B7034D1623014D7300F2E872 /* TestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		B7034D1523014D7300F2E872 /* CommonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonView.h; sourceTree = "<group>"; };
+		B7034D1623014D7300F2E872 /* CommonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonView.m; sourceTree = "<group>"; };
 		B7034D1A230180E500F2E872 /* MDPreLayoutConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPreLayoutConfig.h; sourceTree = "<group>"; };
 		B7034D1B230180E500F2E872 /* MDPreLayoutConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDPreLayoutConfig.m; sourceTree = "<group>"; };
+		B7034D1E230250A700F2E872 /* CommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
+		B7034D1F230250A700F2E872 /* CommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
+		B7034D232302516A00F2E872 /* TableStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableStyleViewController.h; sourceTree = "<group>"; };
+		B7034D242302516A00F2E872 /* TableStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableStyleViewController.m; sourceTree = "<group>"; };
+		B7034D262302518600F2E872 /* ComplexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplexViewController.h; sourceTree = "<group>"; };
+		B7034D272302518600F2E872 /* ComplexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplexViewController.m; sourceTree = "<group>"; };
+		B7034D29230259B600F2E872 /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		B7034D2A230259B600F2E872 /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		B7034D2D23025FF500F2E872 /* TableModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableModel.h; sourceTree = "<group>"; };
+		B7034D2E23025FF500F2E872 /* TableModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableModel.m; sourceTree = "<group>"; };
+		B78AFFE7230284A5009CD013 /* ComplexView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplexView.h; sourceTree = "<group>"; };
+		B78AFFE8230284A5009CD013 /* ComplexView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplexView.m; sourceTree = "<group>"; };
+		B78AFFEA230284F4009CD013 /* ConfigViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		B78AFFEB230284F4009CD013 /* ConfigViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +98,7 @@
 				B7034CF2230139A200F2E872 /* AppDelegate.m */,
 				B7034CF4230139A200F2E872 /* ViewController.h */,
 				B7034CF5230139A200F2E872 /* ViewController.m */,
-				B7034D1523014D7300F2E872 /* TestView.h */,
-				B7034D1623014D7300F2E872 /* TestView.m */,
+				B7034D1D23024E8D00F2E872 /* demo */,
 				B7034CF7230139A200F2E872 /* Main.storyboard */,
 				B7034CFA230139A300F2E872 /* Assets.xcassets */,
 				B7034CFC230139A300F2E872 /* LaunchScreen.storyboard */,
@@ -100,6 +120,53 @@
 			);
 			name = MDPreLayoutKit;
 			path = ../../MDPreLayoutKit;
+			sourceTree = "<group>";
+		};
+		B7034D1D23024E8D00F2E872 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				B7034D2C23025FE200F2E872 /* models */,
+				B7034D22230250D500F2E872 /* views */,
+				B7034D21230250BD00F2E872 /* controllers */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		B7034D21230250BD00F2E872 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7034D1E230250A700F2E872 /* CommonViewController.h */,
+				B7034D1F230250A700F2E872 /* CommonViewController.m */,
+				B78AFFEA230284F4009CD013 /* ConfigViewController.h */,
+				B78AFFEB230284F4009CD013 /* ConfigViewController.m */,
+				B7034D232302516A00F2E872 /* TableStyleViewController.h */,
+				B7034D242302516A00F2E872 /* TableStyleViewController.m */,
+				B7034D262302518600F2E872 /* ComplexViewController.h */,
+				B7034D272302518600F2E872 /* ComplexViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		B7034D22230250D500F2E872 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B7034D1523014D7300F2E872 /* CommonView.h */,
+				B7034D1623014D7300F2E872 /* CommonView.m */,
+				B7034D29230259B600F2E872 /* CustomTableViewCell.h */,
+				B7034D2A230259B600F2E872 /* CustomTableViewCell.m */,
+				B78AFFE7230284A5009CD013 /* ComplexView.h */,
+				B78AFFE8230284A5009CD013 /* ComplexView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B7034D2C23025FE200F2E872 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				B7034D2D23025FF500F2E872 /* TableModel.h */,
+				B7034D2E23025FF500F2E872 /* TableModel.m */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,10 +241,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7034CF6230139A200F2E872 /* ViewController.m in Sources */,
+				B7034D20230250A700F2E872 /* CommonViewController.m in Sources */,
 				B7034D01230139A300F2E872 /* main.m in Sources */,
 				B7034D0C23013A6300F2E872 /* UIView+PreLayout.m in Sources */,
-				B7034D1723014D7300F2E872 /* TestView.m in Sources */,
+				B78AFFEC230284F4009CD013 /* ConfigViewController.m in Sources */,
+				B7034D2F23025FF500F2E872 /* TableModel.m in Sources */,
+				B7034D1723014D7300F2E872 /* CommonView.m in Sources */,
+				B7034D252302516A00F2E872 /* TableStyleViewController.m in Sources */,
+				B78AFFE9230284A5009CD013 /* ComplexView.m in Sources */,
 				B7034CF3230139A200F2E872 /* AppDelegate.m in Sources */,
+				B7034D282302518600F2E872 /* ComplexViewController.m in Sources */,
+				B7034D2B230259B600F2E872 /* CustomTableViewCell.m in Sources */,
 				B7034D1C230180E500F2E872 /* MDPreLayoutConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KNF25R344F;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,6 +415,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KNF25R344F;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

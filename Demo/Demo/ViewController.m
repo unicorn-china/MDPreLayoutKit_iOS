@@ -8,11 +8,13 @@
 
 #import "ViewController.h"
 #import "MDPreLayoutKit.h"
-#import "TestView.h"
+#import "CommonView.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) TestView  *testView;
+@property (nonatomic, strong) UITableView   *tableView;
+@property (nonatomic, copy) NSArray         *typeArr;
+@property (nonatomic, copy) NSArray         *controllers;
 
 @end
 
@@ -21,64 +23,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor lightGrayColor];
-
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"第一个" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [btn setBackgroundColor:[UIColor grayColor]];
-    [btn setFrame:CGRectMake(100, 100, 100, 30)];
-    [self.view addSubview:btn];
-
-    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn1 setTitle:@"第二个" forState:UIControlStateNormal];
-    [btn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [btn1 setBackgroundColor:[UIColor grayColor]];
-    [btn1 setFrame:CGRectMake(100, 200, 100, 30)];
-    [self.view addSubview:btn1];
-
-    UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn2 setTitle:@"第三个" forState:UIControlStateNormal];
-    [btn2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [btn2 setBackgroundColor:[UIColor grayColor]];
-    [btn2 setFrame:CGRectMake(100, 300, 100, 30)];
-    [self.view addSubview:btn2];
-    
-    UIButton *btn3 = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn3 setTitle:@"第四个" forState:UIControlStateNormal];
-    [btn3 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [btn3 setBackgroundColor:[UIColor grayColor]];
-    [btn3 setFrame:CGRectMake(100, 400, 100, 30)];
-    [self.view addSubview:btn3];
-    
-    self.view.preLayoutConfig = [[MDPreLayoutConfig alloc]init];
-    self.view.preLayoutConfig.preItemColor = [UIColor greenColor];
-    
-    [self.view beginPreLayout];
-
-
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(30 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.view endPreLayout];
-    });
-
-    
-//     手动添加演示
-//    [self.view addSubview:self.testView];
-//    [self.testView beginPreLayout];
-//
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [self.testView endPreLayout];
-//    });
-    
+    _typeArr = @[@"默认布局",@"配置样式",@"列表样式",@"自定义样式"];
+    _controllers = @[@"CommonViewController",@"ConfigViewController",@"TableStyleViewController",@"ComplexViewController"];
+    [self.view addSubview:self.tableView];
 }
 
+#pragma mark 代理
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _typeArr.count;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellid"];
+    cell.textLabel.text = _typeArr[indexPath.row];
+    return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *vcStr = _controllers[indexPath.row];
+    UIViewController *vc = [[NSClassFromString(vcStr) alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 #pragma mark lazy
-- (TestView *)testView {
-    if (!_testView) {
-        _testView = [[TestView alloc]initWithFrame:CGRectMake(100, 300, 200, 100)];
-        _testView.backgroundColor = [UIColor whiteColor];
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellid"];
     }
-    return _testView;
+    return _tableView;
 }
 
 @end
