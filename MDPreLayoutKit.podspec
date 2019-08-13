@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MDPreLayoutKit'
-  s.version          = '0.0.1'
+  s.version          = '1.0.0'
   s.summary          = '默认状态布局'
 
   s.description      = <<-DESC
